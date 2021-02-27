@@ -53,10 +53,6 @@ trait MyTransformer[-A, B] {
   def transform(ele: A): B
 }
 
-class StringToInt[String, Int]: MyList[Int] {
-
-}
-
 object InheritanceTest extends App {
   val list: Cons[Int] = new Cons(1, new Cons(2, new Cons(3, Empty)))
   val listStr: Cons[String] = new Cons("abc", new Cons("xys", new Cons("prop", Empty)))
